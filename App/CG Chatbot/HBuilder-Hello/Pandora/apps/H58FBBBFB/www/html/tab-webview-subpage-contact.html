@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Links</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<script>document.getElementsByTagName("html")[0].className += " js";</script>
+		<link rel="stylesheet" href="../krunk-frame-cache/css/style.min.css">
+		<style>
+			html,body {
+				background-color: #efeff4;
+			}
+			.title{
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			 .oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+	
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+			a {
+				text-decoration: none !important;
+			}
+			.accordion__item {
+				border-style: none !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<section>
+			  <div class="">
+				  <br>
+			    <div class="margin-bottom-lg">
+			      <h1 class="text-center">Useful Links</h1>
+			    </div>
+			    <ul class="accordion  js-accordion" data-animation="on" data-multi-items="on">
+			
+					<!-- Links starts here -->
+					<li class="accordion__item  js-accordion__item" id="krunk-first-li" style="display: none;"><button class="reset accordion__header js-tab-focus" type="button"></button><div class="accordion__panel js-accordion__panel"></div></li>
+					
+			    </ul>
+			  </div>
+			</section>
+			<br><br>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		
+		function createElementFromHTML(htmlString) {
+			var div = document.createElement('div');
+			div.innerHTML = htmlString.trim();
+			return div.firstChild;
+		}
+		
+		function newpage(url){
+			plus.runtime.openURL(url, function(res) {
+				console.log(res);  
+			});
+		}
+		
+		let links = `
+		{
+			"Canada Games": [
+		    	{"Canada Games Website": "https://canadagames.ca"},
+				{"Brand": "https://www.canadagames.ca/brand"},
+				{"Partners": "https://www.canadagames.ca/about/partners"},
+				{"Hall of Honour": "https://www.canadagames.ca/about/hall-of-honour"},
+				{"FAQs": "https://www.canadagames.ca/about/faq"},
+				{"Safe Sport": "https://www.canadagames.ca/about/safe-sport"},
+				{"Stategic Plan": "https://drive.google.com/file/d/1ovamhiTFajs-WXfy_Is-Vi9yPABcnZ_N/view"},
+				{"Corporate Resources": "https://www.canadagames.ca/about/corporate-resources"},
+				{"Our People": "https://www.canadagames.ca/about/our-people"},
+				{"Careers": "https://www.canadagames.ca/about/contact#careers"},
+				{"Contant": "https://www.canadagames.ca/about/contact"},
+		    	{"Athletes": "https://www.canadagames.ca/athletes"},
+		    	{"Result": "https://www.canadagames.ca/results"},
+		    	{"News": "https://www.canadagames.ca/in-the-loop"},
+		    	{"Multimedia": "https://www.canadagames.ca/multimedia"}
+		  	],
+			"The Games": [
+		    	{"Niagara 2022": "https://www.canadagames.ca/future-games/niagara-2022"},
+		    	{"PEI 2023": "https://www.canadagames.ca/future-games/prince-edward-island"},
+		    	{"St.John's 2025": "https://www.canadagames.ca/future-games/st-johns-2025"},
+		    	{"Red Deer 2019": "https://www.canadagames.ca/previous-games/red-deer-2019"},
+		    	{"winnipeg 2017": "https://www.canadagames.ca/previous-games/winnipeg-2017"},
+		    	{"Prince George 2015": "https://www.canadagames.ca/previous-games/prince-george-2015"},
+		    	{"Sherbrooke 2013": "https://www.canadagames.ca/previous-games/sherbrooke-2013"},
+		    	{"Halifax 2011": "https://www.canadagames.ca/previous-games/halifax-2011"},
+		    	{"Prince Edward lsland 2009": "https://www.canadagames.ca/previous-games/prince-edward-island-2009"},
+		    	{"Whitehorse 2007": "https://www.canadagames.ca/previous-games/whitehorse-2007"},
+		    	{"Regina 2005": "https://www.canadagames.ca/previous-games/regina-2005"},
+		    	{"Bathurst - Campbellton 2003": "https://www.canadagames.ca/previous-games/bathurst-campbellton-2003"},
+		    	{"London 2001": "https://www.canadagames.ca/previous-games/london-2001"},
+		    	{"Corner Brook 1999": "https://www.canadagames.ca/previous-games/corner-brook-1999"},
+		    	{"Brandon 1997": "https://www.canadagames.ca/previous-games/brandon-1997"},
+		    	{"Grande Prairie 1995": "https://www.canadagames.ca/previous-games/grande-prairie-1995"},
+		    	{"Kamloops 1993": "https://www.canadagames.ca/previous-games/kamloops-1993"},
+		    	{"Prince Edward lsland 1991": "https://www.canadagames.ca/previous-games/prince-edward-island-1991"},
+		    	{"Saskatoon 1989": "https://www.canadagames.ca/previous-games/saskatoon-1989"},
+		    	{"Cape Breton 1987": "https://www.canadagames.ca/previous-games/cape-breton-1987"},
+		    	{"Saint John 1985": "https://www.canadagames.ca/previous-games/saint-john-1985"},
+		    	{"Saguenay-Lac-St-Jean 1983": "https://www.canadagames.ca/previous-games/saguenay-lac-st-jean-1983"},
+		    	{"Thunder Bay 1981": "https://www.canadagames.ca/previous-games/thunder-bay-1981"},
+		    	{"Brandon 1979": "https://www.canadagames.ca/previous-games/brandon-1979"},
+		    	{"St.John's 1977": "https://www.canadagames.ca/previous-games/st-johns-1977"},
+		    	{"Lethbridge 1975": "https://www.canadagames.ca/previous-games/lethbridge-1975"},
+		    	{"New Westminster - Burnaby 1973": "https://www.canadagames.ca/previous-games/new-westminister-burnaby-1973"},
+		    	{"Saskatoon 1971": "https://www.canadagames.ca/previous-games/saskatoon-1971"},
+		    	{"Halifax 1969": "https://www.canadagames.ca/previous-games/halifax-1969"},
+		    	{"Quebec 1967": "https://www.canadagames.ca/previous-games/quebec-1967"}
+		    ],
+		  	"Sports": [
+		  	  	{"ALPINE SKI": "https://www.canadagames.ca/all-sports/alpine-ski"},
+		  	  	{"ARCHERY": "https://www.canadagames.ca/all-sports/archery"},
+		  	  	{"ARTISTIC SWIMMING": "https://www.canadagames.ca/all-sports/artistic-swimming"},
+		  	  	{"ATHLETICS": "https://www.canadagames.ca/all-sports/athletics"},
+		  	  	{"BADMINTON": "https://www.canadagames.ca/all-sports/badminton"},
+		  	  	{"BASEBALL": "https://www.canadagames.ca/all-sports/baseball"},
+		  	  	{"BASKETBALL": "https://www.canadagames.ca/all-sports/basketball"},
+		  	  	{"BIATHLON": "https://www.canadagames.ca/all-sports/biathlon"},
+		  	  	{"BOXING": "https://www.canadagames.ca/all-sports/boxing"},
+		  	  	{"CANOE KAYAK": "https://www.canadagames.ca/all-sports/canoe-kayak"},
+		  	  	{"CROSS COUNTRY SKIING": "https://www.canadagames.ca/all-sports/cross-country-skiing"},
+		  	  	{"CURLING": "https://www.canadagames.ca/all-sports/curling"},
+		  	  	{"CYCLING": "https://www.canadagames.ca/all-sports/cycling"},
+		  	  	{"DIVING": "https://www.canadagames.ca/all-sports/diving"},
+		  	  	{"FENCING": "https://www.canadagames.ca/all-sports/fencing"},
+		  	  	{"FIGURE SKATING": "https://www.canadagames.ca/all-sports/figure-skating"},
+		  	  	{"FREESTYLE SKI": "https://www.canadagames.ca/all-sports/freestyle-ski"},
+		  	  	{"GOLF": "https://www.canadagames.ca/all-sports/golf"},
+		  	  	{"GYMNASTICS": "https://www.canadagames.ca/all-sports/gymnastics"},
+		  	  	{"HOCKEY": "https://www.canadagames.ca/all-sports/hockey"},
+		  	  	{"JUDO": "https://www.canadagames.ca/all-sports/judo"},
+		  	  	{"KARATE": "https://www.canadagames.ca/all-sports/karate"},
+		  	  	{"LACROSSE": "https://www.canadagames.ca/all-sports/lacrosse"},
+		  	  	{"RINGETTE": "https://www.canadagames.ca/all-sports/ringette"},
+		  	  	{"ROWING": "https://www.canadagames.ca/all-sports/rowing"},
+		  	  	{"RUGBY SEVENS": "https://www.canadagames.ca/all-sports/rugby-sevens"},
+		  	  	{"SAILING": "https://www.canadagames.ca/all-sports/sailing"},
+		  	  	{"SNOWBOARD": "https://www.canadagames.ca/all-sports/snowboard"},
+		  	  	{"SOCCER": "https://www.canadagames.ca/all-sports/soccer"},
+		  	  	{"SOFTBALL": "https://www.canadagames.ca/all-sports/softball"},
+		  	  	{"SPEED SKATING": "https://www.canadagames.ca/all-sports/speed-skating"},
+		  	  	{"SQUASH": "https://www.canadagames.ca/all-sports/squash"},
+		  	  	{"SWIMMING": "https://www.canadagames.ca/all-sports/swimming"},
+		  	  	{"TABLE TENNIS": "https://www.canadagames.ca/all-sports/table-tennis"},
+		  	  	{"TENNIS": "https://www.canadagames.ca/all-sports/tennis"},
+		  	  	{"TRIATHLON": "https://www.canadagames.ca/all-sports/triathlon"},
+		  	  	{"VOLLEYBALL": "https://www.canadagames.ca/all-sports/volleyball"},
+		  	  	{"WHEELCHAIR BASKETBALL": "https://www.canadagames.ca/all-sports/wheelchair-basketball"},
+		  	  	{"WRESTLING": "https://www.canadagames.ca/all-sports/wrestling"}
+		  	],
+		  	"Teams": [
+		    	{"Team Alberta": "https://www.canadagames.ca/teams/alberta"},
+		    	{"Team British Columbia": "https://www.canadagames.ca/teams/british-columbia"},
+		    	{"Team Manitoba": "https://www.canadagames.ca/teams/manitoba"},
+		    	{"Team New Brunswick": "https://www.canadagames.ca/teams/new-brunswick"},
+		    	{"Team Newfoundland & Labrador": "https://www.canadagames.ca/teams/newfoundland-labrador"},
+		    	{"Team Nova Scotia": "https://www.canadagames.ca/teams/nova-scotia"},
+		    	{"Team Nunavut": "https://www.canadagames.ca/teams/nunavut"},
+		    	{"Team Northwest Territories": "https://www.canadagames.ca/teams/northwest-territories"},
+		    	{"Team Ontario": "https://www.canadagames.ca/teams/ontario"},
+		    	{"Team Prince Edward lsland": "https://www.canadagames.ca/teams/prince-edward-island"},
+		    	{"Team Quebec": "https://www.canadagames.ca/teams/quebec"},
+		    	{"Team Saskatchewan": "https://www.canadagames.ca/teams/saskatchewan"},
+		    	{"Team Yukon": "https://www.canadagames.ca/teams/yukon"}
+		  	],
+		  	"Niagara Region": [
+		    	{"Niagara Region": "https://www.niagararegion.ca"}
+		  	],
+		  	"Tools": [
+		    	{"Canada Games 2022 Chatbot": "https://web.chatbot-ai.ga/?bot=game"},
+		 		{"BrockU Chatbot": "https://web.chatbot-ai.ga/?bot=brock"}
+		  	]
+		}
+		 	 `;
+		
+		  let images = `
+		{
+			"Canada Games": "../images/cglogo.png",
+			"The Games": "../images/2.png",
+			"Sports": "../images/3.png",
+			"Teams": "../images/4.png",
+			"Niagara Region": "../images/5.png",
+			"Tools": "../images/IMG_0455.jpg"
+		}
+			`;
+
+		let links_array = JSON.parse(links,1);
+		let images_array = JSON.parse(images,1);
+		
+		var div = document.getElementById("krunk-first-li");
+		for (const category of Object.keys(links_array).reverse()) {
+			if (category==="None"){
+				insertAfter(div, createCategoryElement(category,images_array[category]," accordion__item--is-open"));
+			}else{
+				insertAfter(div, createCategoryElement(category,images_array[category],""));
+			}
+			var cat = document.getElementById("krunk-category-"+category);
+			
+			for (const item of Object.keys(links_array[category]).reverse()) {
+				for (const i of Object.keys(links_array[category][item])) {
+					insertAfter(cat, createCategoryItemElement(i,links_array[category][item][i]));
+				}
+			}
+			cat.remove();
+		}
+		div.remove()
+		
+		function insertAfter(referenceNode, newNode) {
+			referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+		}
+		
+		function createCategoryElement(title,image,addclass){
+			return createElementFromHTML(`
+			<li class="accordion__item  js-accordion__item padding-y-xs`+addclass+`">
+			  <button class="reset accordion__header js-tab-focus" type="button">
+			    <ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+			    	<li class="mui-table-view-cell">
+			    		<div class="mui-slider-cell">
+			    			<div class="oa-contact-cell mui-table">
+			    				<div class="oa-contact-avatar mui-table-cell">
+			    					<img src="`+image+`" style="max-width: 65px;" />
+			    				</div>
+			    				<div class="oa-contact-content mui-table-cell">
+			    					<div class="mui-clearfix">
+			    						<h4 class="oa-contact-name">`+title+` ></h4>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</li>
+			    </ul>
+			  </button>
+						
+			  <div class="accordion__panel js-accordion__panel">
+			    <ul class="mui-table-view mui-table-view-chevron">
+			    	<li class="mui-table-view-cell" id="krunk-category-`+title+`">
+			    		<a onclick="newpage('https://krunk.cn')" class="mui-navigate-right">Demo</a>
+			    	</li>
+			    </ul>
+			  </div>
+			</li>
+			`);
+		}
+		
+		function createCategoryItemElement(title,url){
+			return createElementFromHTML(`
+			<li class="mui-table-view-cell">
+				<a onclick="newpage('`+url+`')" class="mui-navigate-right">`+title+`</a>
+			</li>
+			`);
+		}
+		
+	</script>
+	<script src="../krunk-frame-cache/js/scripts.min.js"></script>
+</html>
