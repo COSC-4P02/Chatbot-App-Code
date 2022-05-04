@@ -15,3 +15,7 @@ Open project `Xcode/BU Chatbot` and `Xcode/CG Chatbot` in Xcode
 ## Android Deploy
 
 Build on HbuilderX Cloud [Cloud Packaging](https://hx.dcloud.net.cn/Tutorial/App/AndroidChannel?id=cloud-packaging-how-to-set-channel-packages)
+
+## Deploy Key
+
+https://github.com/COSC-4P02/Chatbot-Keystone/tree/main/Certificate
