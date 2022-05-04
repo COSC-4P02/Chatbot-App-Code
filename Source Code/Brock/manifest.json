@@ -1,0 +1,371 @@
+{
+    "@platforms" : [ "android", "iPhone", "iPad" ],
+    "id" : "H5FCA60B1",
+    /*应用的标识，创建应用时自动生成，勿手动修改*/
+    "name" : "BU Chatbot",
+    /*应用名称，程序桌面图标名称*/
+    "version" : {
+        "name" : "1.1",
+        /*应用版本名称*/
+        "code" : 11
+    },
+    "description" : "Canada Games & Brock University Chatbot Project",
+    /*应用描述信息*/
+    "icons" : {
+        "72" : "icon.png"
+    },
+    "launch_path" : "index.html",
+    /*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "developer" : {
+        "name" : "Tianyu",
+        /*开发者名称*/
+        "email" : "info@chatbot-ai.ga",
+        /*开发者邮箱地址*/
+        "url" : "chatbot-ai.ga"
+    },
+    "permissions" : {
+        "Share" : {}
+    },
+    "plus" : {
+        "ads" : {
+            "push" : "false",
+            "splash" : "false",
+            "rp" : "false",
+            "spot" : "false"
+        },
+        "launchwebview" : {
+            "bottom" : "0px",
+            "background" : "#efeff4",
+            "statusbar" : {
+                "background" : "#efeff4"
+            },
+            "subNViews" : [
+                {
+                    "id" : "tabBar",
+                    "styles" : {
+                        "bottom" : "0px",
+                        "left" : "0",
+                        "height" : "50px",
+                        "width" : "100%",
+                        "backgroundColor" : "#fff"
+                    },
+                    "tags" : [
+                        {
+                            "tag" : "font",
+                            "id" : "indexIcon",
+                            "text" : "",
+                            "position" : {
+                                "top" : "4px",
+                                "left" : "0",
+                                "width" : "25%",
+                                "height" : "24px"
+                            },
+                            "textStyles" : {
+                                "fontSrc" : "_www/fonts/mui.ttf",
+                                "align" : "center",
+                                "size" : "24px"
+                            }
+                        },
+                        {
+                            "tag" : "font",
+                            "id" : "indexText",
+                            "text" : "Home",
+                            "position" : {
+                                "top" : "23px",
+                                "left" : "0",
+                                "width" : "25%",
+                                "height" : "24px"
+                            },
+                            "textStyles" : {
+                                "align" : "center",
+                                "size" : "10px"
+                            }
+                        },
+                        {
+                            "tag" : "font",
+                            "id" : "newsIcon",
+                            "text" : "",
+                            "position" : {
+                                "top" : "4px",
+                                "left" : "20%",
+                                "width" : "25%",
+                                "height" : "24px"
+                            },
+                            "textStyles" : {
+                                "fontSrc" : "_www/fonts/mui.ttf",
+                                "align" : "center",
+                                "size" : "24px"
+                            }
+                        },
+                        {
+                            "tag" : "font",
+                            "id" : "newsText",
+                            "text" : "Ask",
+                            "position" : {
+                                "top" : "23px",
+                                "left" : "20%",
+                                "width" : "25%",
+                                "height" : "24px"
+                            },
+                            "textStyles" : {
+                                "align" : "center",
+                                "size" : "10px"
+                            }
+                        },
+                        {
+                            "tag" : "font",
+                            "id" : "contactIcon",
+                            "text" : "",
+                            "position" : {
+                                "top" : "4px",
+                                "left" : "55%",
+                                "width" : "25%",
+                                "height" : "24px"
+                            },
+                            "textStyles" : {
+                                "fontSrc" : "_www/fonts/mui.ttf",
+                                "align" : "center",
+                                "size" : "24px"
+                            }
+                        },
+                        {
+                            "tag" : "font",
+                            "id" : "contactText",
+                            "text" : "Links",
+                            "position" : {
+                                "top" : "24px",
+                                "left" : "55%",
+                                "width" : "25%",
+                                "height" : "24px"
+                            },
+                            "textStyles" : {
+                                "align" : "center",
+                                "size" : "10px"
+                            }
+                        },
+                        {
+                            "tag" : "font",
+                            "id" : "newwindowIcon",
+                            "text" : "",
+                            "position" : {
+                                "top" : "4px",
+                                "left" : "75%",
+                                "width" : "25%",
+                                "height" : "24px"
+                            },
+                            "textStyles" : {
+                                "fontSrc" : "_www/fonts/iconfont.ttf",
+                                "align" : "center",
+                                "size" : "24px"
+                            }
+                        },
+                        {
+                            "tag" : "font",
+                            "id" : "newwindowText",
+                            "text" : "More",
+                            "position" : {
+                                "top" : "24px",
+                                "left" : "75%",
+                                "width" : "25%",
+                                "height" : "24px"
+                            },
+                            "textStyles" : {
+                                "align" : "center",
+                                "size" : "10px"
+                            }
+                        },
+                        {
+                            "tag" : "rect",
+                            "id" : "tabBorder",
+                            "position" : {
+                                "top" : "0",
+                                "left" : "0",
+                                "width" : "100%",
+                                "height" : "1px"
+                            },
+                            "rectStyles" : {
+                                "color" : "#c00"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "splashscreen" : {
+            "autoclose" : true,
+            /*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+            "waiting" : true
+        },
+        "popGesture" : "close",
+        /*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+        "runmode" : "normal",
+        /*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+        "signature" : "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",
+        /*可选，保留给应用签名，暂不使用*/
+        "distribute" : {
+            "apple" : {
+                "appid" : "ga.chatbot-ai.brock",
+                /*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+                "mobileprovision" : "",
+                /*iOS应用打包配置文件*/
+                "password" : "",
+                /*iOS应用打包个人证书导入密码*/
+                "p12" : "",
+                /*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+                "devices" : "universal",
+                /*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+                "frameworks" : [],
+                "idfa" : false,
+                "urltypes" : "chatbot-ai,chatbot-brock",
+                "capabilities" : {
+                    "entitlements" : {
+                        "com.apple.developer.associated-domains" : [ "chatbot-ai.ga", "web.chatbot-ai.ga" ]
+                    }
+                }
+            },
+            "google" : {
+                "packagename" : "ga.chatbot-ai.brock",
+                /*Android应用包名，如io.dcloud.HelloH5*/
+                "keystore" : "",
+                /*Android应用打包使用的密钥库文件*/
+                "password" : "",
+                /*Android应用打包使用密钥库中证书的密码*/
+                "aliasname" : "",
+                /*Android应用打包使用密钥库中证书的别名*/
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>"
+                ],
+                "autoSdkPermissions" : false,
+                "schemes" : "chatbot-ai,chatbot-brock",
+                "targetSdkVersion" : 30,
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ],
+                "permissionPhoneState" : {
+                    "request" : "none"
+                },
+                "permissionExternalStorage" : {
+                    "request" : "none"
+                }
+            },
+            "orientation" : [ "portrait-primary" ],
+            /*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+            "icons" : {
+                "ios" : {
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    },
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "appstore" : "unpackage/res/icons/1024x1024.png"
+                },
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                }
+            },
+            "splashscreen" : {
+                "ios" : {
+                    "iphone" : {},
+                    "ipad" : {}
+                },
+                "android" : {}
+            },
+            "plugins" : {
+                "ad" : {},
+                "share" : {}
+            }
+        },
+        "error" : {
+            "url" : "krunk/error.html"
+        },
+        "safearea" : {
+            //iOS平台的安全区域
+            "left" : {
+                "offset" : "auto"
+            },
+            "right" : {
+                "offset" : "auto"
+            },
+            "bottom" : {
+                "offset" : "auto"
+            }
+        }
+    },
+    "dependencies" : {
+        "pages" : {
+            "index.html" : {
+                "resources" : [
+                    "js/mui.min.js",
+                    "css/mui.min.css",
+                    "html/tab-webview-subpage-about.html",
+                    "fonts/mui.ttf",
+                    "fonts/iconfont.ttf",
+                    "html/tab-webview-subpage-chat.html",
+                    "js/util.js"
+                ],
+                "refer" : [ "html/tab-webview-subpage-contact.html", "html/new-webview.html" ],
+                "priority" : 0
+            },
+            "launch.html" : {
+                "resources" : [
+                    "js/mui.min.js",
+                    "css/mui.min.css",
+                    "html/tab-webview-subpage-about.html"
+                ],
+                "refer" : [
+                    "html/tab-webview-subpage-setting.html",
+                    "html/tab-webview-subpage-chat.html",
+                    "html/tab-webview-subpage-contact.html"
+                ],
+                "priority" : 0
+            },
+            "html/tab-webview-subpage-setting.html" : {
+                "resources" : [ "fonts/mui.ttf", "css/mui.min.css", "js/mui.min.js" ],
+                "refer" : [],
+                "priority" : 0
+            },
+            "html/tab-webview-subpage-about.html" : {
+                "resources" : [ "css/mui.min.css", "js/mui.min.js", "js/util.js" ],
+                "refer" : [],
+                "priority" : 0
+            },
+            "html/tab-webview-subpage-chat.html" : {
+                "resources" : [ "fonts/mui.ttf", "js/mui.min.js", "css/mui.min.css" ],
+                "refer" : [],
+                "priority" : 0
+            },
+            "html/tab-webview-subpage-contact.html" : {
+                "resources" : [ "images/60x60.gif", "js/mui.min.js", "css/mui.min.css" ],
+                "refer" : [],
+                "priority" : 0
+            },
+            "html/new-webview.html" : {
+                "resources" : [ "css/mui.min.css", "js/mui.min.js", "fonts/mui.ttf" ],
+                "refer" : [],
+                "priority" : 0
+            }
+        },
+        "idle" : {
+            "resources" : [ "js/mui.js", "css/mui.css" ]
+        }
+    },
+    "screenOrientation" : [ "portrait-primary" ]
+}

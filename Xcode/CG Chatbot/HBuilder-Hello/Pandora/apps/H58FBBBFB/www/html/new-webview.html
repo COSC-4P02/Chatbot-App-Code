@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>More</title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<script>document.getElementsByTagName("html")[0].className += " js";</script>
+		<link rel="stylesheet" href="../krunk-frame-cache/css/style.min.css">
+		<style>
+			html,body {
+				background-color: #efeff4;
+			}
+			.title{
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			 .oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+			
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">More</h1>
+		</header>
+		
+		<div class="mui-content">
+			<div class="title" style="margin-top:20px;margin-left: 20px;">
+				Settings
+			</div>
+			
+			<div class="container max-width-sm">
+			
+				<div class="switch-card bg radius-md padding-md inner-glow shadow-xs js-switch-card">
+					<div class="flex flex-wrap gap-xxs items-center justify-between">
+						<figure class="switch-card__figure">
+							<img class="switch-card__img" src="../images/perm_data_setting@3x.png" alt="App logo">
+						</figure>
+						<div class="switch js-switch-card__switch">
+							<input class="switch__input" type="checkbox" id="switch-card-1">
+							<label class="switch__label" for="switch-card-1" aria-hidden="true">Activate</label>
+							<div class="switch__marker" aria-hidden="true"></div>
+						</div>
+					</div>
+					<div class="text-component margin-top-md">
+						<h2 class="text-base">Enable Data Saver Mode</h2>
+						<p class="text-sm color-contrast-medium">Load cached picture and do not load optional data</p>
+					</div>
+				</div>
+				
+				<br>
+				<div class="switch-card bg radius-md padding-md inner-glow shadow-xs js-switch-card">
+					<div class="flex flex-wrap gap-xxs items-center justify-between">
+						<figure class="switch-card__figure">
+							<img class="switch-card__img" src="../images/signal_wifi_off@3x.png" alt="App logo">
+						</figure>
+						<div class="switch js-switch-card__switch">
+							<input class="switch__input" type="checkbox" id="switch-card-2">
+							<label class="switch__label" for="switch-card-2" aria-hidden="true">Activate</label>
+							<div class="switch__marker" aria-hidden="true"></div>
+						</div>
+					</div>
+					<div class="text-component margin-top-md">
+						<h2 class="text-base">Enable Wi-Fi Only Mode</h2>
+						<p class="text-sm color-contrast-medium">Only allowing the App to connect when on a Wi-Fi connection</p>
+					</div>
+				</div>
+				
+				<br>
+				<div class="switch-card bg radius-md padding-md inner-glow shadow-xs js-switch-card">
+					<div class="flex flex-wrap gap-xxs items-center justify-between">
+						<figure class="switch-card__figure">
+							<img class="switch-card__img" src="../images/announcement@3x.png" alt="App logo">
+						</figure>
+						<div class="switch js-switch-card__switch">
+							<input class="switch__input" type="checkbox" id="switch-card-3">
+							<label class="switch__label" for="switch-card-3" aria-hidden="true">Activate</label>
+							<div class="switch__marker" aria-hidden="true"></div>
+						</div>
+					</div>
+					<div class="text-component margin-top-md">
+						<h2 class="text-base">Disable Welcome Messages</h2>
+						<p class="text-sm color-contrast-medium">The welcome message on the homepage will be disappeared if enabled</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		
+		<div class="mui-content">
+			<div class="title" style="margin-left: 20px;">
+				Introduce you to our awesome team !
+			</div>
+		
+			<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+				
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="https://avatars.githubusercontent.com/u/26049401?v=4" style="max-width: 65px;" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<a onclick="newpage('https://github.com/KrunkZhou')"><h4 class="oa-contact-name">Tianyu Zhou</h4></a>
+									<span class="oa-contact-position mui-h6">Full Stack</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									webmaster@krunk.cn
+								</p>
+								<p class="oa-contact-email mui-h6">
+									tz17va@brocku.ca
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="https://avatars.githubusercontent.com/u/78173335?v=4" style="max-width: 65px;" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">Dazhi Gao</h4>
+									<span class="oa-contact-position mui-h6">Leader</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									dg15rv@brocku.ca
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="https://avatars.githubusercontent.com/u/64762591?v=4" style="max-width: 65px;" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">Wenjie Li</h4>
+									<span class="oa-contact-position mui-h6">Crawler</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									wl14ht@brocku.ca
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="https://avatars.githubusercontent.com/u/81278734?v=4" style="max-width: 65px;" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">Zijian Feng</h4>
+									<span class="oa-contact-position mui-h6">Frontend</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									zf16eq@brocku.ca
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="https://avatars.githubusercontent.com/u/21290799?v=4" style="max-width: 65px;" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">Jiayang Lai</h4>
+									<span class="oa-contact-position mui-h6">Backend</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									jl17za@brocku.ca
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="https://avatars.githubusercontent.com/u/37007493?v=4" style="max-width: 65px;" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">Icarus Zhu</h4>
+									<span class="oa-contact-position mui-h6">Frontend</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									pz15gx@brocku.ca
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="https://avatars.githubusercontent.com/u/92129755?v=4" style="max-width: 65px;" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">Junhui Chen</h4>
+									<span class="oa-contact-position mui-h6">Crawler</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									jc19si@brocku.ca
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="https://avatars.githubusercontent.com/u/79997975?v=4" style="max-width: 65px;" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">Siyuan Zhao</h4>
+									<span class="oa-contact-position mui-h6">Report</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									bz17gr@brocku.ca
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+			
+			<br>
+			
+			<div class="title" style="margin-left: 20px;">
+				Learn More:
+			</div>
+			
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell">
+					<a onclick="newpage('https://chatbot-ai.ga/')" class="mui-navigate-right" style="text-decoration: none !important;">Chatbot-Ai.ga</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a onclick="newpage('https://web.chatbot-ai.ga/')" class="mui-navigate-right" style="text-decoration: none !important;">Chatbot Web Edition</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a onclick="newpage('http://github.com/COSC-4P02/COSC4P02Project')" class="mui-navigate-right" style="text-decoration: none !important;">Open Source Code</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a onclick="newpage('https://github.com/COSC-4P02/COSC4P02Project/blob/main/LICENSE')" class="mui-navigate-right" style="text-decoration: none !important;">License</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a onclick="newpage('https://app.chatbot-ai.ga/privacy.html')" class="mui-navigate-right" style="text-decoration: none !important;">Privacy Policy</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a onclick="newpage('mailto:info@chatbot-ai.ga')" class="mui-navigate-right" style="text-decoration: none !important;">Contact Us</a>
+				</li>
+			</ul>
+			
+			<br>
+			
+			<div class="title" style="margin-left: 20px;">
+				Credits:
+			</div>
+			
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell">
+					<a onclick="newpage('https://www.canadagames.ca/')" class="mui-navigate-right" style="text-decoration: none !important;">Canada Games</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a onclick="newpage('https://www.canadagames.ca/in-the-loop')" class="mui-navigate-right" style="text-decoration: none !important;">Canada Games News</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a onclick="newpage('https://brocku.ca/webcal/2020/undergrad/cosc.html#COSC_4P02')" class="mui-navigate-right" style="text-decoration: none !important;">COSC 4P02</a>
+				</li>
+			</ul>
+			
+			<br><br><br><br>
+			
+			
+		</div>
+		
+		
+		
+		<script>
+			mui.init();
+		</script>
+		<script src="../krunk-frame-cache/js/scripts.min.js"></script>
+		
+		<script>
+		
+		function newpage(url){
+			plus.runtime.openURL(url, function(res) {
+				console.log(res);  
+			});
+		}
+		
+		mui.plusReady(function() {
+		
+			// 按钮设置
+			function switch_init(name,localstorage){
+				var checkbox1 = document.getElementById(name);
+				checkbox1.addEventListener('change', function() {
+				  if (this.checked) {
+					console.log(localstorage+" Enabled");
+					plus.storage.setItem(localstorage,"true");
+				  } else {
+					console.log(localstorage+" Disabled");
+					plus.storage.setItem(localstorage,"false");
+				  }
+				});
+				if (plus.storage.getItem(localstorage)=="true"){
+					console.log(localstorage+" is ON");
+					document.getElementById(name).checked=true;
+				}
+			}
+			// 初始化 (tag id, 储存)
+			switch_init("switch-card-1","data-saver");
+			switch_init("switch-card-2","wifi-only");
+			switch_init("switch-card-3","no-welcome");
+		
+		});
+		
+		</script>
+	</body>
+</html>
