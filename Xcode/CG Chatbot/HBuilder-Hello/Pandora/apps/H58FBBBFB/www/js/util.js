@@ -2,7 +2,7 @@ var util = {
 	options: {
 		ACTIVE_COLOR: "#00b2ff", // 按钮颜色
 		NORMAL_COLOR: "#000",
-		subpages: ["https://web.chatbot-ai.ga/?bot=game", "html/tab-webview-subpage-contact.html"]
+		subpages: ["https://web.chatbot-ai.gq/?bot=game", "html/tab-webview-subpage-contact.html"]
 	},
 	/**
 	 *  简单封装了绘制原生view控件的方法
@@ -59,7 +59,7 @@ var util = {
 					// 		});
 					// 	}
 					// }, false);
-					sub.overrideUrlLoading({mode:'allow', match:'^web.chatbot-ai.ga/.*'}, function(e) {  
+					sub.overrideUrlLoading({mode:'allow', match:'^web.chatbot-ai.gq/.*'}, function(e) {  
 						console.log(e.url)
 					    // plus.nativeUI.showWaiting("Opening...",{padding:'30px',width:'150px',background:'rgba(0,0,0,0.5)'});  
 				    	plus.runtime.openURL(e.url, function(res) {

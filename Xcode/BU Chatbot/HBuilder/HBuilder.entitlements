@@ -4,9 +4,9 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>webcredentials:chatbot-ai.ga</string>
-		<string>chatbot-ai.ga</string>
-		<string>web.chatbot-ai.ga</string>
+		<string>webcredentials:chatbot-ai.gq</string>
+		<string>chatbot-ai.gq</string>
+		<string>web.chatbot-ai.gq</string>
 	</array>
 </dict>
 </plist>

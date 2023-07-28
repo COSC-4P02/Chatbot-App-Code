@@ -19,9 +19,9 @@
     "developer" : {
         "name" : "Tianyu",
         /*开发者名称*/
-        "email" : "info@chatbot-ai.ga",
+        "email" : "info@chatbot-ai.gq",
         /*开发者邮箱地址*/
-        "url" : "chatbot-ai.ga"
+        "url" : "chatbot-ai.gq"
     },
     "permissions" : {
         "Share" : {}
@@ -204,7 +204,7 @@
         /*可选，保留给应用签名，暂不使用*/
         "distribute" : {
             "apple" : {
-                "appid" : "ga.chatbot-ai.game",
+                "appid" : "ga.chatbot-ai.gqme",
                 /*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
                 "mobileprovision" : "",
                 /*iOS应用打包配置文件*/
@@ -219,12 +219,12 @@
                 "urltypes" : "chatbot-ai,chatbot-game",
                 "capabilities" : {
                     "entitlements" : {
-                        "com.apple.developer.associated-domains" : [ "chatbot-ai.ga", "web.chatbot-ai.ga" ]
+                        "com.apple.developer.associated-domains" : [ "chatbot-ai.gq", "web.chatbot-ai.gq" ]
                     }
                 }
             },
             "google" : {
-                "packagename" : "ga.chatbot-ai.game",
+                "packagename" : "ga.chatbot-ai.gqme",
                 /*Android应用包名，如io.dcloud.HelloH5*/
                 "keystore" : "",
                 /*Android应用打包使用的密钥库文件*/

@@ -19,9 +19,9 @@
     "developer" : {
         "name" : "Tianyu",
         /*开发者名称*/
-        "email" : "info@chatbot-ai.ga",
+        "email" : "info@chatbot-ai.gq",
         /*开发者邮箱地址*/
-        "url" : "chatbot-ai.ga"
+        "url" : "chatbot-ai.gq"
     },
     "permissions" : {
         "Share" : {}
@@ -219,7 +219,7 @@
                 "urltypes" : "chatbot-ai,chatbot-brock",
                 "capabilities" : {
                     "entitlements" : {
-                        "com.apple.developer.associated-domains" : [ "chatbot-ai.ga", "web.chatbot-ai.ga" ]
+                        "com.apple.developer.associated-domains" : [ "chatbot-ai.gq", "web.chatbot-ai.gq" ]
                     }
                 }
             },
